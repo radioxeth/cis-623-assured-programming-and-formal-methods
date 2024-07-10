@@ -1,0 +1,37 @@
+--------------------------------------------------------------------------------
+2.3.1  Interactive Glasgow Haskell Compiler (GHCi) and Standard Prelude 
+--------------------------------------------------------------------------------
+
+a.  Defining pure functions 
+
+> f       :: Int -> Int -> Int -> Int
+> f x y z = x + y + z
+
+> b           :: Bool -> Bool -> Bool
+> b True True  = True
+> b True False = False
+> b False True = True
+> b False False = False 
+
+
+> d :: Double -> Double
+> d x = sin x + cos x 
+
+b.  Using functions from Prelude
+
+--  Visit functions in Prelude (Hutton Appendix)
+
+--  Examples
+
+> divide      :: Int -> [a] -> ([a],[a])
+> divide k xs = (take k xs, drop k xs)
+
+--  try: divide 5 [1..10] =([1,2,3,4,5],[6,7,8,9,10])
+
+
+> getmiddle    :: [a] -> a
+> getmiddle xs = xs !!(length xs `div` 2)
+
+--  a is a type variable.
+--  These two functions are polymorphic (see Hutton 3.7).
+--  Will revisit these concepts later.
