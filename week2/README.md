@@ -413,6 +413,21 @@ Jill says (r&sup;(p&or;q))
 
 | Non-well-formed access-control statement | Reason                                                         |
 |------------------------------------------|----------------------------------------------------------------|
-| Orly & Mitch                             | A principal expression, not an access-control formula         |
-| ¬ Orly                                   | The negation operator must precede an access-control formula  |
-| (Orly) ⇒ (p ∧ q)                         | Because (p ∧ q) is not a principal expression, the speaks-for operator ⇒ must appear between two principal expressions |
+| Orly & Mitch                             | A principal expression, not an access-control formula          |
+| ¬ Orly                                   | The negation operator must precede an access-control formula   |
+| (Orly) ⇒ (p ∧ q)                        | Because (p ∧ q) is not a principal expression, the speaks-for operator ⇒ must appear between two principal expressions |
+
+
+## Live Session
+
+[0..90]!!n -- nth element of [0..90]
+
+| if
+| else if
+| else if
+| else
+
+
+do the homework
+<br>
+go through the number to words programs
