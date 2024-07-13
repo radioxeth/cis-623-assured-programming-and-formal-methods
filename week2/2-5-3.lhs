@@ -116,34 +116,7 @@ _______________________________________________________
 > link n = if n < 100 then " and " else " "
 
 > convert :: Int -> String
-> convert = convert7
-
-_______________________________________________________
-
-Test convert6
-_______________________________________________________
-
-
-Compare the patterns between 
-
-a). convert3 and convert6
-
-_______________________________________________________
-_______________________________________________________
-
-
-> digits7 :: Int -> (Int,Int)
-> digits7 n = n `divMod` 1000000
-
-> convert7 :: Int -> String
-> convert7 = combine7 . digits7
-
-> combine7 :: (Int,Int) -> String
-> combine7 (m,n)
->   | m==0      = convert3 n
->   | n==0      = convert3 m ++ " million"
->   | otherwise = convert3 m ++ " million" ++ link n ++
->                 convert3 n
+> convert = convert6
 
 _______________________________________________________
 
