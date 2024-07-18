@@ -294,7 +294,7 @@ x (digits6)::(combine6) name of that integer
   - an integer n greater than one is prime if its only positive factores are one and the number itself
   - formally, as prim (n) thatis
 
-  `prime (n) is tru if and only if n satisfy (*)`
+  `prime (n) is true if and only if n satisfy (*)`
 
   - prime: predicate
 
@@ -309,7 +309,7 @@ x (digits6)::(combine6) name of that integer
   - quantifiers 
     - &forall; (for all)
     - &exist; (there exists)
-  - ususal logical symbols, such as &not; &and; &or; &rarr;
+  - usual logical symbols, such as &not; &and; &or; &rarr;
 
 #### The Property Prime (n)
 
