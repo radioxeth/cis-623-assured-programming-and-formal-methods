@@ -66,4 +66,3 @@ Two ways to define the addition of natural numbers
 
 
 
-

@@ -477,7 +477,7 @@ fb x:xs=
 -- 2,4,6,8,10
 ```
 
-- using a guard we can define a function that maps a positive integerf to its list of factors:
+- using a guard we can define a function that maps a positive integer to its list of factors:
 ```hs
 factors: Int -> [Int]
 factors n = [x | x <-[1..n], n `mod` x==0]
@@ -486,7 +486,7 @@ factors n = [x | x <-[1..n], n `mod` x==0]
 [1,3,5,15]
 ```
 
-- a positve integer is prime if its only factors ar e1 and itself
+- a positive integer is prime if its only factors ar e1 and itself
 
 ```hs
 prime :: Int -> Bool

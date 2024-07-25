@@ -87,7 +87,3 @@ ProVar consists of 'p', 'q' and 'r'
 > form4 =  (And (Imply p q) r)
 
 
-
-
-
-

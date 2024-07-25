@@ -342,4 +342,5 @@ data Prin = Name String
 
 [4-8-1.lhs](./4-8-1.lhs)
 
-## Live Session
+## Live 
+https://hackage.haskell.org/
