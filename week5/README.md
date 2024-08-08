@@ -265,35 +265,30 @@ $$\frac{H_1...H_k}{C}$$
 
 #### Logical Rules: Page 1
 - Tautology (Taut)
-If \(\varphi\) is an instance of a propositional logic tautology:
-\[
-\frac{}{\varphi}
-\]
+If &phi; is an instance of a propositional logic tautology:
+
+$\frac{}{\varphi}$
 
 - Modus Ponens
-\[
-\frac{\varphi \quad \varphi \supset \varphi'}{\varphi'}
-\]
+
+$\frac{\varphi \quad \varphi \supset \varphi'}{\varphi'}$
+
 
 - Says
-\[
-\frac{\varphi}{P \text{ says } \varphi}
-\]
+
+$\frac{\varphi}{P \text{ says } \varphi}$
 
 - MP Says
-\[
-\frac{(P \text{ says } (\varphi \supset \varphi')) \quad (P \text{ says } \varphi)}{P \text{ says } \varphi'}
-\]
+
+$\frac{(P \text{ says } (\varphi \supset \varphi')) \quad (P \text{ says } \varphi)}{P \text{ says } \varphi'}$
 
 - Speaks For
-\[
-\frac{P \supset Q}{(P \text{ says } \varphi \supset Q \text{ says } \varphi)}
-\]
+
+$\frac{P \supset Q}{(P \text{ says } \varphi \supset Q \text{ says } \varphi)}$
 
 - Controls
-\[
-P \text{ controls } \varphi \quad \overset{\text{def}}{=} \quad (P \text{ says } \varphi \supset \varphi)
-\]
+
+$P \text{ controls } \varphi \quad \overset{\text{def}}{=} \quad (P \text{ says } \varphi \supset \varphi)$
 
 #### Common Propositional Logic Tautologies
 \[
@@ -417,10 +412,10 @@ The resulting derived rule:
 
 | Step | Statement                         | Justification             |
 |------|-----------------------------------|---------------------------|
-| 1    | P controls \(\varphi\)            | Assumption                |
-| 2    | P says \(\varphi\)                | Assumption                |
-| 3    | (P says \(\varphi\)) ⊃ \(\varphi\) | 1 Definition of controls  |
-| 4    | \(\varphi\)                       | 2, 3 Modus Ponens         |
+| 1    | P controls &phi;            | Assumption                |
+| 2    | P says &phi;                | Assumption                |
+| 3    | (P says &phi;) ⊃ &phi; | 1 Definition of controls  |
+| 4    | &phi;                       | 2, 3 Modus Ponens         |
 
 **Proof of (B)**
 
