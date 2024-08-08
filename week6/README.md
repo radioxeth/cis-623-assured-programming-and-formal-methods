@@ -117,19 +117,19 @@ J1=the set where the underlying list is
 ```
 
 ### Evaluation Function: Specification
-### Semantics: Definition of \( \mathcal{E}_M \left[ \cdot \right] \)
+### Semantics: Definition of \( E_M \left[ \cdot \right] \)
 
 \[
 \begin{aligned}
-\mathcal{E}_M[p] & = I(p) \\
-\mathcal{E}_M[\neg \varphi] & = W - \mathcal{E}_M[\varphi] \\
-\mathcal{E}_M[\varphi_1 \land \varphi_2] & = \mathcal{E}_M[\varphi_1] \cap \mathcal{E}_M[\varphi_2] \\
-\mathcal{E}_M[\varphi_1 \lor \varphi_2] & = \mathcal{E}_M[\varphi_1] \cup \mathcal{E}_M[\varphi_2] \\
-\mathcal{E}_M[\varphi_1 \rightarrow \varphi_2] & = (W - \mathcal{E}_M[\varphi_1]) \cup \mathcal{E}_M[\varphi_2] \\
-\mathcal{E}_M[\varphi_1 \leftrightarrow \varphi_2] & = \mathcal{E}_M[\varphi_1 \rightarrow \varphi_2] \cap \mathcal{E}_M[\varphi_2 \rightarrow \varphi_1] \\
-\mathcal{E}_M[P \text{ says } \varphi] & = \{ w \mid J(P)(w) \subseteq \mathcal{E}_M[\varphi] \} \\
-\mathcal{E}_M[P \text{ controls } \varphi] & = \mathcal{E}_M[(P \text{ says } \varphi) \rightarrow \varphi] \\
-\mathcal{E}_M[P \Rightarrow Q] & = 
+E_M[p] & = I(p) \\
+E_M[\neg \varphi] & = W - E_M[\varphi] \\
+E_M[\varphi_1 \land \varphi_2] & = E_M[\varphi_1] \cap E_M[\varphi_2] \\
+E_M[\varphi_1 \lor \varphi_2] & = E_M[\varphi_1] \cup E_M[\varphi_2] \\
+E_M[\varphi_1 \rightarrow \varphi_2] & = (W - E_M[\varphi_1]) \cup E_M[\varphi_2] \\
+E_M[\varphi_1 \leftrightarrow \varphi_2] & = E_M[\varphi_1 \rightarrow \varphi_2] \cap E_M[\varphi_2 \rightarrow \varphi_1] \\
+E_M[P \text{ says } \varphi] & = \{ w \mid J(P)(w) \subseteq E_M[\varphi] \} \\
+E_M[P \text{ controls } \varphi] & = E_M[(P \text{ says } \varphi) \rightarrow \varphi] \\
+E_M[P \Rightarrow Q] & = 
 \begin{cases} 
 W, & \text{if } J(Q) \subseteq J(P) \\
 \emptyset, & \text{otherwise}
