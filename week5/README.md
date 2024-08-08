@@ -293,23 +293,23 @@ $P \text{ controls } \varphi \quad \overset{\text{def}}{=} \quad (P \text{ says 
 #### Common Propositional Logic Tautologies
 \[
 \begin{align*}
-& p \lor \neg p \\
-& p \equiv (\neg \neg p) \\
-& p \supset (q \lor p) \\
-& p \supset (q \supset p) \\
-& (p \land q) \supset p \\
-& \neg (\neg p \land p) \\
+p \lor \neg p \\
+p \equiv (\neg \neg p) \\
+p \supset (q \lor p) \\
+p \supset (q \supset p) \\
+(p \land q) \supset p \\
+\neg (\neg p \land p) \\
 \end{align*}
 \]
 
 \[
 \begin{align*}
-& p \supset (q \supset (p \land q)) \\
-& (p \land q) \supset (p \supset q) \\
-& (p \land q) \supset (q \land p) \\
-& (p \equiv q) \supset (p \supset q) \\
-& ((p \lor q) \land \neg p) \supset q \\
-& ((p \supset q) \land (q \supset r)) \supset (p \supset r) \\
+p \supset (q \supset (p \land q)) \\
+(p \land q) \supset (p \supset q) \\
+(p \land q) \supset (q \land p) \\
+(p \equiv q) \supset (p \supset q) \\
+((p \lor q) \land \neg p) \supset q \\
+((p \supset q) \land (q \supset r)) \supset (p \supset r) \\
 \end{align*}
 \]
 
