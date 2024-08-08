@@ -416,11 +416,11 @@ $
 
 | Step | Statement                               | Justification             |
 |------|-----------------------------------------|---------------------------|
-| 1    | \(\varphi_1\)                           | Assumption                |
-| 2    | \(\varphi_2\)                           | Assumption                |
-| 3    | \(\varphi_2 \supset (\varphi_1 \supset (\varphi_1 \land \varphi_2))\) | Tautology                |
-| 4    | \(\varphi_2 \supset (\varphi_1 \land \varphi_2)\) | 1, 3 Modus Ponens         |
-| 5    | \(\varphi_1 \land \varphi_2\)           | 2, 4 Modus Ponens         |
+| 1    | $\varphi_1$                          | Assumption                |
+| 2    | $\varphi_2$                          | Assumption                |
+| 3    | $\varphi_2 \supset (\varphi_1 \supset (\varphi_1 \land \varphi_2))$| Tautology                |
+| 4    | $\varphi_2 \supset (\varphi_1 \land \varphi_2)$| 1, 3 Modus Ponens         |
+| 5    | $\varphi_1 \land \varphi_2$          | 2, 4 Modus Ponens         |
 
 
 ### Reasoning and Access Control: Proofs
@@ -504,10 +504,10 @@ $
 | Step | Statement                                           | Justification         |
 |------|-----------------------------------------------------|-----------------------|
 | 1    | Ed controls (Flo controls delete)                   | Assumption            |
-| 2    | \(K_E\) says (Flo controls delete)                  | Assumption            |
-| 3    | \(K_E \rArr\) Ed                                  | Assumption            |
+| 2    | $K_E$says (Flo controls delete)                  | Assumption            |
+| 3    | $K_E \rArr$Ed                                  | Assumption            |
 | 4    | Flo says delete                                     | Assumption            |
-| 5    | \(K_E \rArr\) Ed ⊃ ((K_E says (Flo controls delete)) ⊃ (Ed says (Flo controls delete))) | Speaks For            |
+| 5    | $K_E \rArr$Ed ⊃ ((K_E says (Flo controls delete)) ⊃ (Ed says (Flo controls delete))) | Speaks For            |
 | 6    | ((K_E  says  (Flo controls delete)) ⊃ (Ed says (Flo controls delete))) | 3, 5 Modus Ponens     |
 | 7    | (K_E says (Flo controls delete)) ⊃ (Ed says (Flo controls delete)) | 2, 6 Modus Ponens     |
 | 8    | Ed says (Flo controls delete)                       | 4, 8 Controls         |
