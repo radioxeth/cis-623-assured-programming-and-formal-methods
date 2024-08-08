@@ -291,27 +291,22 @@ $\frac{P \supset Q}{(P \text{ says } \varphi \supset Q \text{ says } \varphi)}$
 $P \text{ controls } \varphi \quad \overset{\text{def}}{=} \quad (P \text{ says } \varphi \supset \varphi)$
 
 #### Common Propositional Logic Tautologies
-\[
-\begin{align*}
-p \lor \neg p \\
-p \equiv (\neg \neg p) \\
-p \supset (q \lor p) \\
-p \supset (q \supset p) \\
-(p \land q) \supset p \\
-\neg (\neg p \land p) \\
-\end{align*}
-\]
 
-\[
-\begin{align*}
-p \supset (q \supset (p \land q)) \\
-(p \land q) \supset (p \supset q) \\
-(p \land q) \supset (q \land p) \\
-(p \equiv q) \supset (p \supset q) \\
-((p \lor q) \land \neg p) \supset q \\
-((p \supset q) \land (q \supset r)) \supset (p \supset r) \\
-\end{align*}
-\]
+- $p \lor \neg p$
+- $p \equiv (\neg \neg p)$
+- $p \supset (q \lor p)$
+- $p \supset (q \supset p)$
+- $(p \land q) \supset p$
+- $\neg (\neg p \land p)$
+
+
+
+- $p \supset (q \supset (p \land q))$
+- $(p \land q) \supset (p \supset q)$
+- $(p \land q) \supset (q \land p)$
+- $(p \equiv q) \supset (p \supset q)$
+- $((p \lor q) \land \neg p) \supset q$
+- $((p \supset q) \land (q \supset r)) \supset (p \supset r)$
 
 #### Using the Taut Rule
 - (p&or;&not;p) is a tuatology
@@ -325,14 +320,12 @@ p \supset (q \supset (p \land q)) \\
 #### Logical Rules: page 2
 
 **Transitivity of &rArr;**
-\[
-\frac{P \rArr Q \quad Q \rArr R}{P \rArr R}
-\]
+
+$\frac{P \rArr Q \quad Q \rArr R}{P \rArr R}$
 
 **Equivalence**
-\[
-\frac{\varphi_1 \equiv \varphi_2}{\psi[\varphi_1 / q] \quad \psi[\varphi_2 / q]}
-\]
+
+$\frac{\varphi_1 \equiv \varphi_2}{\psi[\varphi_1 / q] \quad \psi[\varphi_2 / q]}$
 
 
 <hr>
@@ -369,14 +362,12 @@ C_____4 _____..._____(may use 1,2,3 and existing reference rules)
 
 #### Sample Deduction Proof
 
-Let's deduce \(A \text{ says } s\) from the following two assumptions:
+Let's deduce A says s from the following two assumptions:
 
-\[
-\begin{align*}
-A \text{ says } (r \supset s) \\
-r
-\end{align*}
-\]
+
+
+- $A \text{ says } (r \supset s)$
+- $r$
 
 **Sample formal proof:**
 
@@ -391,7 +382,7 @@ r
 
 The resulting derived rule:
 
-\[
+$
 \frac{A \text{ says } (r \supset s) \quad r}{A \text{ says } s}
 \]
 
@@ -406,7 +397,7 @@ The resulting derived rule:
 
 **Proof of (A)**
 
-\[
+$
 \frac{P \text{ controls } \varphi \quad P \text{ says } \varphi}{\varphi}
 \]
 
@@ -419,9 +410,9 @@ The resulting derived rule:
 
 **Proof of (B)**
 
-\[
+$
 \frac{\varphi_1 \quad \varphi_2}{\varphi_1 \land \varphi_2}
-\]
+$
 
 | Step | Statement                               | Justification             |
 |------|-----------------------------------------|---------------------------|
@@ -437,54 +428,54 @@ The resulting derived rule:
 #### Derived Inference Rules
 
 **Conjunction**
-\[
+$
 \frac{\varphi_1 \quad \varphi_2}{\varphi_1 \land \varphi_2}
-\]
+$
 
 **Double Negation**
-\[
+$
 \frac{\neg \neg \varphi}{\varphi}
-\]
+$
 
 **Simplification**
-\[
+$
 \frac{\varphi_1 \land \varphi_2}{\varphi_1}
-\]
+$
 
 **Simplification**
-\[
+$
 \frac{\varphi_1 \land \varphi_2}{\varphi_2}
-\]
+$
 
 **Disjunction**
-\[
+$
 \frac{\varphi_1}{\varphi_1 \lor \varphi_2}
-\]
+$
 
 **Disjunction**
-\[
+$
 \frac{\varphi_2}{\varphi_1 \lor \varphi_2}
-\]
+$
 
 **Modus Tollens**
-\[
+$
 \frac{\varphi \supset \varphi' \quad \neg \varphi'}{\neg \varphi}
-\]
+$
 
 **Hypothetical Syllogism**
-\[
+$
 \frac{\varphi_1 \supset \varphi_2 \quad \varphi_2 \supset \varphi_3}{\varphi_1 \supset \varphi_3}
-\]
+$
 
 **Disjunctive Syllogism**
-\[
+$
 \frac{\varphi_1 \lor \varphi_2 \quad \neg \varphi_1}{\varphi_2}
-\]
+$
 
 **Controls**
-\[
+$
 \frac{P \text{ controls } \varphi \quad P \text{ says } \varphi}{\varphi}
-\]
+$
 
 
 #### You should know
@@ -544,14 +535,14 @@ The resulting derived rule:
 
 #### Sample Formal Proof
 
-Let's deduce \(A \text{ says } s\) from the following two assumptions:
+Let's deduce A says }  from the following two assumptions:
 
-\[
-\begin{align*}
-A \text{ says } (r \supset s) \\
+$
+A \text{ says } (r \supset s)
+$
+$
 r
-\end{align*}
-\]
+$
 
 **A formal proof**:
 
@@ -566,9 +557,9 @@ r
 
 The resulting derived rule:
 
-\[
+$
 \frac{A \text{ says } (r \supset s) \quad r}{A \text{ says } s}
-\]
+$
 
 
 ## Live Session
