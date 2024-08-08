@@ -127,12 +127,8 @@ J1=the set where the underlying list is
 - $E_M[P \text{ says } \varphi]  = \{ w \mid J(P)(w) \subseteq E_M[\varphi] \}$
 - $E_M[P \text{ controls } \varphi]  = E_M[(P \text{ says } \varphi) \rightarrow \varphi]$
 - $E_M[P \Rightarrow Q] = $
-- $W \text{ if } J(Q) \subseteq J(P)$
-- $J(Q) \subseteq J(P)$
-\begin{cases} 
-W, & \text{if } J(Q) \subseteq J(P)$
-\emptyset, & \text{otherwise}
-\end{cases}$
+  - $W \text{ if } J(Q) \subseteq J(P)$
+  - $\emptyset{} \text{ otherwise}$
  
 
 #### Revised Version
