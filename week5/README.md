@@ -504,10 +504,10 @@ $
 | Step | Statement                                           | Justification         |
 |------|-----------------------------------------------------|-----------------------|
 | 1    | Ed controls (Flo controls delete)                   | Assumption            |
-| 2    | $K_E$says (Flo controls delete)                  | Assumption            |
-| 3    | $K_E \rArr$Ed                                  | Assumption            |
+| 2    | K_E says (Flo controls delete)                  | Assumption            |
+| 3    | K_E &rArr; Ed                                  | Assumption            |
 | 4    | Flo says delete                                     | Assumption            |
-| 5    | $K_E \rArr$Ed ⊃ ((K_E says (Flo controls delete)) ⊃ (Ed says (Flo controls delete))) | Speaks For            |
+| 5    | K_E &rArr; Ed ⊃ ((K_E says (Flo controls delete)) ⊃ (Ed says (Flo controls delete))) | Speaks For            |
 | 6    | ((K_E  says  (Flo controls delete)) ⊃ (Ed says (Flo controls delete))) | 3, 5 Modus Ponens     |
 | 7    | (K_E says (Flo controls delete)) ⊃ (Ed says (Flo controls delete)) | 2, 6 Modus Ponens     |
 | 8    | Ed says (Flo controls delete)                       | 4, 8 Controls         |
@@ -535,14 +535,10 @@ $
 
 #### Sample Formal Proof
 
-Let's deduce A says }  from the following two assumptions:
+Let's deduce A says r  from the following two assumptions:
 
-$
-A \text{ says } (r \supset s)
-$
-$
-r
-$
+- $A \text{ says } (r \supset s)$
+- $r$
 
 **A formal proof**:
 
@@ -557,9 +553,7 @@ $
 
 The resulting derived rule:
 
-$
-\frac{A \text{ says } (r \supset s) \quad r}{A \text{ says } s}
-$
+$\frac{A \text{ says } (r \supset s) \quad r}{A \text{ says } s}$
 
 
 ## Live Session
