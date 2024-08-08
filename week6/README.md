@@ -98,10 +98,10 @@ implement a test in Haskell language to demonstrate that set intersection is com
 
 | Mathematical definition | Haskell definition |
 |-------------------------|---------------------|
-| - \( \mathcal{M} = (W, I, J) \) | `type WKripke = Set Int` |
-| - \( W \): nonempty set | `type IKripke = Set (PropVar, Int)` |
-| - \( I : \text{PropVar} \rightarrow \mathcal{P}(W) \) | `type JKripke = Set (PName, (Int, Int))` |
-| - \( J : \text{PName} \rightarrow \mathcal{P}(W \times W) \) | `type Kripke = (WKripke, IKripke, JKripke)` |
+| - $M = (W, I, J)$ | `type WKripke = Set Int` |
+| - $W$: nonempty set | `type IKripke = Set (PropVar, Int)` |
+| - $I : \text{PropVar} \rightarrow P(W)$ | `type JKripke = Set (PName, (Int, Int))` |
+| - $J : \text{PName} \rightarrow P(W\times{W})$ | `type Kripke = (WKripke, IKripke, JKripke)` |
 
 - Remarks
   - the functions I and J in the definition are not directly translated from the mathematical definition. Both are now a list of tuples.
@@ -165,3 +165,7 @@ J1=the set where the underlying list is
 
 
 ## Live Session
+
+homework
+
+add to 6-6-1 formulas 2.15 and 2.16

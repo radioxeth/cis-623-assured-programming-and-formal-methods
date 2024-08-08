@@ -345,7 +345,7 @@ is
 
 - Every formal proof yields a theorem (derived inference rule)
 
-$$\frac{H_1...H_c}{C}$$
+$\frac{H_1...H_c}{C}$
 
 where H1...Hk are the only assumptions of the proof and C is the final statement
 
@@ -382,9 +382,7 @@ Let's deduce A says s from the following two assumptions:
 
 The resulting derived rule:
 
-$
-\frac{A \text{ says } (r \supset s) \quad r}{A \text{ says } s}
-\]
+$\frac{A \text{ says } (r \supset s) \quad r}{A \text{ says } s}$
 
 
 
@@ -397,9 +395,7 @@ $
 
 **Proof of (A)**
 
-$
-\frac{P \text{ controls } \varphi \quad P \text{ says } \varphi}{\varphi}
-\]
+- $\frac{P \text{ controls } \varphi \quad P \text{ says } \varphi}{\varphi}$
 
 | Step | Statement                         | Justification             |
 |------|-----------------------------------|---------------------------|
@@ -410,9 +406,7 @@ $
 
 **Proof of (B)**
 
-$
-\frac{\varphi_1 \quad \varphi_2}{\varphi_1 \land \varphi_2}
-$
+- $\frac{\varphi_1 \quad \varphi_2}{\varphi_1 \land \varphi_2}$
 
 | Step | Statement                               | Justification             |
 |------|-----------------------------------------|---------------------------|
@@ -428,54 +422,34 @@ $
 #### Derived Inference Rules
 
 **Conjunction**
-$
-\frac{\varphi_1 \quad \varphi_2}{\varphi_1 \land \varphi_2}
-$
+- $\frac{\varphi_1 \quad \varphi_2}{\varphi_1 \land \varphi_2}$
 
 **Double Negation**
-$
-\frac{\neg \neg \varphi}{\varphi}
-$
+- $\frac{\neg \neg \varphi}{\varphi}$
 
 **Simplification**
-$
-\frac{\varphi_1 \land \varphi_2}{\varphi_1}
-$
+- $\frac{\varphi_1 \land \varphi_2}{\varphi_1}$
 
 **Simplification**
-$
-\frac{\varphi_1 \land \varphi_2}{\varphi_2}
-$
+- $\frac{\varphi_1 \land \varphi_2}{\varphi_2}$
 
 **Disjunction**
-$
-\frac{\varphi_1}{\varphi_1 \lor \varphi_2}
-$
+- $\frac{\varphi_1}{\varphi_1 \lor \varphi_2}$
 
 **Disjunction**
-$
-\frac{\varphi_2}{\varphi_1 \lor \varphi_2}
-$
+- $\frac{\varphi_2}{\varphi_1 \lor \varphi_2}$
 
 **Modus Tollens**
-$
-\frac{\varphi \supset \varphi' \quad \neg \varphi'}{\neg \varphi}
-$
+- $\frac{\varphi \supset \varphi' \quad \neg \varphi'}{\neg \varphi}$
 
 **Hypothetical Syllogism**
-$
-\frac{\varphi_1 \supset \varphi_2 \quad \varphi_2 \supset \varphi_3}{\varphi_1 \supset \varphi_3}
-$
+- $\frac{\varphi_1 \supset \varphi_2 \quad \varphi_2 \supset \varphi_3}{\varphi_1 \supset \varphi_3}$
 
 **Disjunctive Syllogism**
-$
-\frac{\varphi_1 \lor \varphi_2 \quad \neg \varphi_1}{\varphi_2}
-$
+- $\frac{\varphi_1 \lor \varphi_2 \quad \neg \varphi_1}{\varphi_2}$
 
 **Controls**
-$
-\frac{P \text{ controls } \varphi \quad P \text{ says } \varphi}{\varphi}
-$
+- $\frac{P \text{ controls } \varphi \quad P \text{ says } \varphi}{\varphi}$
 
 
 #### You should know
