@@ -330,12 +330,9 @@ Semantics—need to assign precise meanings to the newly added syntax by:
 
 ##### Kripke Semantics
 
-$\mathcal{E}_M [\ell_1 \leq_S \ell_2] = 
-\begin{cases} 
-    W, & \text{if } L(\ell_1) \preceq L(\ell_2) \\
-    \emptyset, & \text{otherwise}
-\end{cases}
-$
+$\mathcal{E}_M [\ell_1 \leq_S \ell_2] = $
+$W, \text{if } L(\ell_1) \preceq L(\ell_2)$
+$\emptyset, \text{otherwise}$
 
 $\mathcal{E}_M [\ell_1 =_S \ell_2] = \mathcal{E}_M [\ell_1 \leq_S \ell_2] \cap \mathcal{E}_M [\ell_2 \leq_S \ell_1]
 $
