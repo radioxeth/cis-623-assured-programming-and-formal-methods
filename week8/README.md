@@ -121,12 +121,11 @@
 
 $\frac{\text{Owner says(Subject controls <operation, object>) \\ Owner controls(Subject controls <operation, object>) \\ Subject says <operation, object>}}{\text{<operation, object>}}$
 
-\[
-\frac{\substack{\text{Owner says (Subject controls <operation, object>)} \\
+$\frac{\substack{\text{Owner says (Subject controls <operation, object>)} \\
                 \text{Owner controls (Subject controls <operation, object>)} \\
                 \text{Subject says <operation, object>}}}
      {\text{<operation, object>}}
-\]
+$
 
 #### Demonstration:
 
@@ -331,34 +330,28 @@ Semantics—need to assign precise meanings to the newly added syntax by:
 
 ##### Kripke Semantics
 
-\[
-\mathcal{E}_M [\ell_1 \leq_S \ell_2] = 
+$\mathcal{E}_M [\ell_1 \leq_S \ell_2] = 
 \begin{cases} 
     W, & \text{if } L(\ell_1) \preceq L(\ell_2) \\
     \emptyset, & \text{otherwise}
 \end{cases}
-\]
+$
 
-\[
-\mathcal{E}_M [\ell_1 =_S \ell_2] = \mathcal{E}_M [\ell_1 \leq_S \ell_2] \cap \mathcal{E}_M [\ell_2 \leq_S \ell_1]
-\]
+$\mathcal{E}_M [\ell_1 =_S \ell_2] = \mathcal{E}_M [\ell_1 \leq_S \ell_2] \cap \mathcal{E}_M [\ell_2 \leq_S \ell_1]
+$
 
 ##### Inference Rules
 
-\[
-\ell_1 =_S \ell_2 \overset{\text{def}}{=} (\ell_1 \leq_S \ell_2) \land (\ell_2 \leq_S \ell_1)
-\]
+$\ell_1 =_S \ell_2 \overset{\text{def}}{=} (\ell_1 \leq_S \ell_2) \land (\ell_2 \leq_S \ell_1)
+$
 
 **Reflexivity of $\leq_S$**
-\[
-\frac{\ell \leq_S \ell}{}
-\]
+$\frac{\ell \leq_S \ell}{}
+$
 
 **Transitivity of $\leq_S$**
-\[
-\frac{\ell_1 \leq_S \ell_2 \quad \ell_2 \leq_S \ell_3}{\ell_1 \leq_S \ell_3}
-\]
+$\frac{\ell_1 \leq_S \ell_2 \quad \ell_2 \leq_S \ell_3}{\ell_1 \leq_S \ell_3}
+$
 
-\[
-\frac{sl(P) =_S \ell_1 \quad sl(Q) =_S \ell_2 \quad \ell_1 \leq_S \ell_2}{sl(P) \leq_S sl(Q)}
-\]
+$\frac{sl(P) =_S \ell_1 \quad sl(Q) =_S \ell_2 \quad \ell_1 \leq_S \ell_2}{sl(P) \leq_S sl(Q)}
+$
