@@ -7,6 +7,6 @@
 - [Week 5 Applying Formal Methods Part 1](./week5/README.md)
 - [Week 6 Applying Formal Methods Part 2](./week6/README.md)
 - [Week 7 Programming Paradigms Part 2](./week7/README.md)
-- **&rarr;[Week 8 Applying Formal Methods Part 3](./week8/README.md)**
-- [Week 9 Applying Formal Methods Part 4](./week9/README.md)
+- [Week 8 Applying Formal Methods Part 3](./week8/README.md)
+- **&rarr;[Week 9 Applying Formal Methods Part 4](./week9/README.md)**
 - [Week 10 Applying Formal Methods Part 5](./week10/README.md)

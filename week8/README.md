@@ -69,8 +69,20 @@
 
 #### Says Simplification Rules
 
-- say simplification (1) $\frac{P says (\phi{}_1\and{}\phi{}_2)}{P says \phi{}_1}$
-- say simplification (2) $\frac{P says (\phi{}_1\and{}\phi{}_2)}{P says \phi{}_2}$
+- say simplification (1) $\frac{P says (\phi{}_1 \land{} \phi{}_2)}{P \text{ says } \phi{}_1}$
+- say simplification (2) $\frac{P says (\phi{}_1 \land{} \phi{}_2)}{P \text{ says } \phi{}_2}$
+
+#### Ticket Rule:
+
+
+$\frac{\text{subject says }\varphi \quad \text{authority controls } (\text{subject controls }\varphi) \quad \text{ticket} \Rightarrow \text{authority} \quad \text{ticket says } (\text{subject controls }\varphi)}{\varphi}$
+
+**The hypotheses used are:**
+
+- *subject* says $ \varphi $ — Access request
+- *authority* controls (*subject* controls $ \varphi $) — Access policy
+- *ticket* $ \Rightarrow $ *authority* — Trust assumption
+- *ticket* says (*subject* controls $ \varphi $) — Ticket
 
 ### Discretionary Security Policies
 #### background of the CIA trend
@@ -91,6 +103,7 @@
 
 - integrity
 - availability
+  - quality of service
 
 
 #### access-control matrix
@@ -124,8 +137,12 @@ $\frac{\text{Owner says(Subject controls <operation, object>) \\ Owner controls(
 $\frac{\substack{\text{Owner says (Subject controls <operation, object>)} \\
                 \text{Owner controls (Subject controls <operation, object>)} \\
                 \text{Subject says <operation, object>}}}
-     {\text{<operation, object>}}
-$
+     {\text{<operation, object>}}$
+
+#### Example
+
+WE NEED TO FILL THIS OUT
+
 
 #### Demonstration:
 
@@ -343,8 +360,7 @@ $\ell_1 =_S \ell_2 \overset{\text{def}}{=} (\ell_1 \leq_S \ell_2) \land (\ell_2 
 $
 
 **Reflexivity of $\leq_S$**
-$\frac{\ell \leq_S \ell}{}
-$
+$\frac{}{\ell \leq_S \ell}$
 
 **Transitivity of $\leq_S$**
 $\frac{\ell_1 \leq_S \ell_2 \quad \ell_2 \leq_S \ell_3}{\ell_1 \leq_S \ell_3}
@@ -352,3 +368,58 @@ $
 
 $\frac{sl(P) =_S \ell_1 \quad sl(Q) =_S \ell_2 \quad \ell_1 \leq_S \ell_2}{sl(P) \leq_S sl(Q)}
 $
+
+### Bell-la Padula Model
+
+- military security policy: managing information flow
+- primarily concern: protecting confidentiality
+- describes the conditions under which read access can be granted
+- describes the conditions under which write access can be granted
+
+Observations
+- includes both mandatory and discretionary component
+- expresses confidentiality properties with respect to discretionary access and security levels
+- the extended kripke structure introduced earlier can be used to support he reasoning regarding read and write access
+
+### Bell-a Padula Logic
+
+#### Simple Security Condition
+
+Principal \( P \) can *read* object \( O \) if and only if:
+
+1. \( P \)'s security level is at least as high as \( O \)'s (i.e., \( \text{sl}(O) \leq_s \text{sl}(P) \)), and
+2. \( P \) has discretionary read access to \( O \) (i.e., \( P \) controls \( \langle \text{read}, O \rangle \)).
+
+\[
+(\text{sl}(O) \leq_s \text{sl}(P)) \supset (P \text{ controls } \langle \text{read}, O \rangle)
+\]
+
+> *Notes*:
+> - Condition in ACL
+> - "No read up"
+
+---
+
+#### \*-Property
+
+Principal \( P \) can *write* to object \( O \) if and only if:
+
+1. \( O \)'s security level is at least as high as \( P \)'s (i.e., \( \text{sl}(P) \leq_s \text{sl}(O) \)), and
+2. \( P \) has discretionary write access to \( O \) (i.e., \( P \) controls \( \langle \text{write}, O \rangle \)).
+
+\[
+(\text{sl}(P) \leq_s \text{sl}(O)) \supset (P \text{ controls } \langle \text{write}, O \rangle)
+\]
+
+> *Notes*:
+> - "No write down"
+
+#### Remarks
+
+- Catch phrase: "no read up and no write down"
+- Both the *simple security* condition and the *\*-property* are "if and only if" statements.
+- Note that the *if* direction is expressible in AC logic, but the *only-if* direction is not.
+
+
+#### Example
+- ACST section 5.4.3
