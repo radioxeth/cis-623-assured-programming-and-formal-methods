@@ -103,3 +103,8 @@ emptyl = ([],[])
 p
 
 ## Live Session
+
+
+invariant checks that f should never be empty (unless b is null) and q exists.
+
+project due friday sept 6 at midnight.
