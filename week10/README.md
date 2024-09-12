@@ -257,3 +257,363 @@ J(q)|J(p)=J(q) o J(p)={(w2,w1),(w0,w0),(w1,w1)}
 ![alt text](image-9.png)
 ![alt text](image-10.png)
 ![alt text](image-11.png)
+
+
+
+$\frac{P\rArr{}R\space{}R\rArr{}Q}{R\text{ says }\phi{}=P\&Q\text{ says }\phi{}}$
+
+$\frac{P\rArr{}Q\space{}Q\rArr{}P}{P\text{ says }\phi{}=Q\text{ says }\phi{}}$
+
+
+$\frac{}{P\&Q\text{ says }\phi{}=((P\text{ says }\phi{})\land{}(Q\text{ says }\phi{}))}$
+$P\text{ controls }\phi{}=(P\text{ says }\phi{})\supset{}\phi{}$
+$P\&Q\text{ controls }\phi{}$
+
+
+
+
+a. $J_0(Hal \& Gil)$ 
+
+- $J_0(Hal) = \{(sw,sw),(sc,sw),(ns,ns)\}$
+- $J_0(Gil) = \{(sw,sw),(sc,sc),(ns,ns)\}$
+$$
+J_0(Hal)\cup{}J_0(Gil)\\
+\{(sw,sw),(sc,sw),(ns,ns)\}\cup{}\{(sw,sw),(sc,sc),(ns,ns)\}\\
+\{(sw,sw),(sc,sw),(ns,ns),(sc,sc)\}
+$$
+
+b. $J_0(Gil|Hal)$
+
+- J_0(Gil) = {(sw,sw),(sc,sc),(ns,ns)}
+- J_0(Hal) = {(sw,sw),(sc,sw),(ns,ns)}
+
+=J0(Gil &sdot; Hal)
+= {(sw,sw),(sc,sc),(ns,ns)}&sdot;{(sw,sw),(sc,sw),(ns,ns)}
+= {(sw,sw),(sc,sw),(ns,ns)}
+
+c. J_0(Flo & Ida)
+
+- J_0(Flo) = {(sw,sw),(sw,sc),(sc,sw),(sc,sc),(ns,ns)}
+- J_0(Ida) = {(sw,sc),(sc,sw),(ns,sc),(ns,ns)}
+
+= J0(Flo &cup; Ida)
+= {(sw,sw),(sw,sc),(sc,sw),(sc,sc),(ns,ns)} &cup;  {(sw,sc),(sc,sw),(ns,sc),(ns,ns)}
+= {(sw,sw),(sw,sc),(sc,sw),(sc,sc),(ns,ns),(ns,sc)}
+
+
+d. J_0(Hal|Ida)
+
+- J_0(Hal) = {(sw,sw),(sc,sw),(ns,ns)}
+- J_0(Ida) = {(sw,sc),(sc,sw),(ns,sc),(ns,ns)}
+
+= J0(Hal &sdot; Ida)
+= {(sw,sw),(sc,sw),(ns,ns)} &sdot; {(sw,sc),(sc,sw),(ns,sc),(ns,ns)}
+= {(sw,sc),(sc,sc),(ns,sc),(ns,ns)}
+
+
+
+- $W_0$ = {sw,sc,ns}
+- $I_0$:PropVar&rArr;$P(\{sw,sc,ns\})$
+  - where $I_0(g)=\{sw\}$
+- $J_0(Gil) = \{(sw,sw),(sc,sc),(ns,ns)\}$
+- $J_0(Flo) = \{(sw,sw),(sw,sc),(sc,sw),(sc,sc),(ns,ns)\}$
+- $J_0(Hal) = \{(sw,sw),(sc,sw),(ns,ns)\}$
+- $J_0(Ida) = \{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}$
+
+a. $J_0(Hal \& Gil)$ 
+
+- $J_0(Hal) = \{(sw,sw),(sc,sw),(ns,ns)\}$
+- $J_0(Gil) = \{(sw,sw),(sc,sc),(ns,ns)\}$
+
+$$
+=\{(sw,sw),(sc,sw),(ns,ns)\}\cup{}\{(sw,sw),(sc,sc),(ns,ns)\}\\
+=\{(sw,sw),(sc,sw),(ns,ns),(sc,sc)\}
+$$
+
+b. $J_0(Gil|Hal)$
+
+- $J_0(Gil) = \{(sw,sw),(sc,sc),(ns,ns)\}$
+- $J_0(Hal) = \{(sw,sw),(sc,sw),(ns,ns)\}$
+
+$$
+=\{(sw,sw),(sc,sc),(ns,ns)\}\circ{}\{(sw,sw),(sc,sw),(ns,ns)\}\\
+=\{(sw,sw),(sc,sw),(ns,ns)\}
+$$
+
+c. $J_0(Flo\&Ida)$
+
+- $J_0(Flo) = \{(sw,sw),(sw,sc),(sc,sw),(sc,sc),(ns,ns)\}$
+- $J_0(Ida) = \{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}$
+
+$$
+=\{(sw,sw),(sw,sc),(sc,sw),(sc,sc),(ns,ns)\}\cup{}\{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}\\
+=\{(sw,sw),(sw,sc),(sc,sw),(sc,sc),(ns,ns),(ns,sc)\}
+$$
+
+d. $J_0(Hal|Ida)$
+
+- $J_0(Hal) = \{(sw,sw),(sc,sw),(ns,ns)\}$
+- $J_0(Ida) = \{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}$
+
+$$
+\{(sw,sw),(sc,sw),(ns,ns)\}\circ{}\{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}\\
+\{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}
+$$
+
+
+e. $J_0(Ida|Hal)$
+
+- $J_0(Ida) = \{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}$\\
+- $J_0(Hal) = \{(sw,sw),(sc,sw),(ns,ns)\}$
+
+$$
+\{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}\circ{}\{(sw,sw),(sc,sw),(ns,ns)\}\\
+\{(sw,sw),(sw,sc),(ns,sw),(ns,ns)\}
+$$
+
+
+f. $J_0(Hal\&(Ida|Hal))$
+
+- $J_0(Ida) = \{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}$\\
+- $J_0(Hal) = \{(sw,sw),(sc,sw),(ns,ns)\}$
+
+$$
+J_0(Hal)\&(\{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}\circ{}\{(sw,sw),(sc,sw),(ns,ns)\})\\
+J_0(Hal)\&\{(sw,sw),(sc,sw),(ns,sw),(ns,ns)\}\\
+\{(sw,sw),(sc,sw),(ns,ns)\}\cup{}\{(sw,sw),(sc,sw),(ns,sw),(ns,ns)\}\\
+\{(sw,sw),(sc,sw),(ns,ns),(ns,sw)\}
+$$
+
+g. $J_0(Hal|(Ida\&Hal))$
+
+- $J_0(Ida) = \{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}$\\
+- $J_0(Hal) = \{(sw,sw),(sc,sw),(ns,ns)\}$
+
+$$
+J_0(Hal)\circ{}(\{(sw,sc),(sc,sw),(ns,sc),(ns,ns)\}\cup{}\{(sw,sw),(sc,sw),(ns,ns)\})\\
+J_0(Hal)\circ{}\{(sw,sc),(sc,sw),(ns,sc),(ns,ns),(sw,sw)\}\\
+\{(sw,sw),(sc,sw),(ns,ns)\}\circ{}\{(sw,sc),(sc,sw),(ns,sc),(ns,ns),(sw,sw)\}
+\{(sw,sc),(sc,sc),(sc,sw),(sw,sw),(ns,ns),(ns,sc)\}
+$$
+
+J(x)(AB,BC,DC,CC)
+J(x')(AA,BD,CA,DA)
+
+|state|x|x'|
+|--|--|--|
+|**A**|B|A|
+|**B**|C|D|
+|**C**|C|A|
+|**D**|C|A|
+
+Suppose there are two observers Bar and Foo. Both have faulty knowledge. When machine is in state A, Bar believes it to be in state D and vice-versa. Foo believes that machine is in state C when it is actually in state B. It perceives the other three states correctly. Find J(Bar) and J(Foo)
+
+W={A,B,C,D}
+J(bar)={(AD,BB,CC,DA)}
+J(foo)={(AA,BC,CC,DD)}
+<br>
+
+
+
+Form = (Princ says Form)
+ = (PName says Form)
+ = (Jill says Form)
+ = (Jill says (Form ⊃ Form))
+ = (Jill says (PropVar ⊃ Form))
+ = (Jill says (r ⊃ Form))
+ = (Jill says (r ⊃ (Form ∨Form)))
+ = (Jill says (r ⊃ (PropVar∨Form)))
+ = (Jill says (r ⊃ (p∨Form)))
+ = (Jill says (r ⊃ (p∨PropVar)))
+ = (Jill says (r ⊃ (p∨q)))
+
+ <br>
+
+Form ::= PropVar / &not; Form / (Form &or; Form) /
+(Form &and; Form) / (Form &sup; Form) / (Form &equiv; Form) /
+(Princ &rArr; Princ) / (Princ says Form) / (Princ controls Form)
+
+2.2.1
+
+a. ((p &and; &not;q) &sup; (Cal controls r))
+
+((PropVar &or; &not;PropVar) &sup; (Cal controls r))
+((Form &or; Form) &sup; (Cal controls r))
+(Form &sup; (Cal controls r))
+(Form &sup; (Cal controls PropVar))
+(Form &sup; (Cal controls Form))
+(Form &sup; Form)
+Form
+
+b. ((Gin &rArr; r) &and; q)
+
+no, (Gin &rArr; r) is not a valid form
+
+c. (Mel | Ned says (r &sup; t))
+
+(Mel | Ned says (r &sup; t))
+(Mel | Ned says (PropVar &sup; PropVar))
+(Mel | Ned says (Form &sup; Form))
+(Mel | Ned says Form)
+
+no, because | is not defined in the BNF
+
+d. (&not;t &rArr; Sal)
+
+(&not;PropVar &rArr; Sal)
+(&not;Form &rArr; Sal)
+(Form &rArr; Sal)
+(Form &rArr; Princ)
+
+no, (Form &rArr; Princ) is not in the BNF
+
+e. Ulf controls (Vic | Wes &rArr; Tor)
+
+no because | is not defined in the BNF
+
+f. (Pat controls (Quint controls (Ryne says s)))
+(Pat controls (Quint controls (Princ says PropVar)))
+(Pat controls (Quint controls (Princ says Form)))
+(Pat controls (Quint controls (Princ says Form)))
+(Pat controls (Quint controls Form))
+(Pat controls (Princ controls Form))
+(Pat controls Form)
+(Princ controls Form)
+Form
+
+
+A = \<WA,IA, JA\> and B = \<WB,IB, JB\>
+WA = {a1,a2,a3}
+IA(p) = {a3}
+IA(q) = {a1,a3}
+IA(r) = {a1,a2}
+JA(Val) = {(a1,a1),(a1,a2),(a2,a1),(a3,a2)}
+JA(Wyn) = {(a1,a3),(a2,a3),(a3,a2)}.
+WB = {b1,b2,b3,b4}
+IB(p) = {b2,b1}
+IB(q) = {b3}
+IB(r) = {b2,b4,b1}
+JB(Val) = {(b1,b2),(b2,b3),(b2,b4),(b4,b4)}
+JB(Wyn) = {(b1,b1),(b2,b1),(b3,b2),(b3,b4),(b4,b2)}
+
+which are true:
+
+a. A = p &or; (q &sup; r)
+
+
+W = {w0,w1,w2}
+I(s) = {w1,w2}
+I(t) = {w2}
+J(Cy) = {(w1,w0),(w1,w1),(w2,w0)}
+J(Di) = {(w0,w1),(w1,w0),(w2,w2)}
+
+a. s &sup; t
+Em(s &sup; t) = (W - Em(s)) &sup; Em(t)
+= (W - Em(s)) &sup; Em(t)
+= (W-I(s)) &sup; I(t)
+= ({w0,w1,w2}-{w1,w2}) &sup; {w2}
+= {w0} &sup; {w2}
+= false
+
+a. &not;(s &sup; t)
+Em(s &sup; t) = (W - Em(s)) &sup; Em(t)
+= (W - Em(s)) &sup; Em(t)
+= (W-I(s)) &sup; I(t)
+= ({w0,w1,w2}-{w1,w2}) &sup; {w2}
+= {w0} &sup; {w2}
+= false
+
+Assured Programming and Formal Methods
+
+EM [[p]] = I(p)
+EM [[¬ϕ]] = W −EM [[ϕ]]
+EM [[ϕ1 ∧ϕ2]] = EM [[ϕ1]]∩EM [[ϕ2]]
+EM [[ϕ1 ∨ϕ2]] = EM [[ϕ1]]∪EM [[ϕ2]]
+EM [[ϕ1 ⊃ ϕ2]] = (W −EM [[ϕ1]])∪EM [[ϕ2]]
+EM [[ϕ1 ≡ ϕ2]] = EM [[ϕ1 ⊃ ϕ2]]∩EM [[ϕ2 ⊃ ϕ1]]
+EM [[P ⇒ Q]] = (
+W, if J(Q) ⊆ J(P)
+0/, otherwise
+)
+EM [[P says ϕ]] = {w|J(P)(w) ⊆ EM [[ϕ]]}
+EM [[P controls ϕ]] = EM [[(P says ϕ) ⊃ ϕ]]
+
+
+W = {w0,w1,w2}
+I(s) = {w1,w2}
+I(t) = {w2}
+J(Cy) = {(w1,w0),(w1,w1),(w2,w0)}
+J(Di) = {(w0,w1),(w1,w0),(w2,w2)}
+
+a. s ⊃ t
+= Em(s&sup;t)=(W-EM(s)) &cup; EM(t)
+= ({w0,w1,w2}-{w1,w2}) &cup; {w2}
+= {w0} &cup; {w2} 
+= {w0,w2}
+
+b. ¬(s ⊃ t)
+= W-{w1}
+= {w1}
+
+c. Cy says (s ⊃ t)
+= Cy says {w1}
+= {w|J(P)(w) &supe; Em ({w0,w2})}
+J(w0)={}
+J(w1)={w0,w1}
+J(w2)={w0}
+
+= {{w2} &supe; {w0,w2}}
+= {w2}
+
+d. Cy says ¬(s ⊃ t)
+Cy says {w1}
+= {w|J(P)(w) &supe; Em ({w1})}
+J(w1)={w0,w1}
+J(w2)={w0}
+&empty;
+
+e. Di says (s ⊃ t)
+
+= Di says {w1}
+= {w|J(P)(w) &supe; Em ({w0,w2})}
+J(w0)={w1}
+J(w1)={w0}
+J(w2)={w2}
+{w1,w2}
+
+f. Di says ¬(s ⊃ t)
+g. (Cy & Di) says (s ⊃ t)
+h. (Cy & Di) says ¬(s ⊃ t)
+i. (Di | Cy) says (s ⊃ t)
+j. (Di | Cy) says ¬(s ⊃ t)
+k. Di ⇒ Cy
+l. Cy says (Di ⇒ Cy)
+m. Di says (Di ⇒ Cy)
+n. Di says (Di & Cy ⇒ Cy)
+
+proof
+
+1. Al says (r &sup; s)       :: assumption
+2. r                         :: assumption
+3. Al says (r &sup; s) &sup; Al says r &sup; Al says s :: MP Says, 1
+4. Al says r &sup; Al says s :: MP 1, 3
+5. Al says r                 :: Says 2
+6. Al says s                 :: MP 4,5
+
+
+$\frac{P\text{ says }\phi{}_1\space{}P\rArr{}Q}{Q\text{ says }(\phi{}_2\supset{}\phi{}_1)}$
+
+1. P says &phi;1 ::  Assumption
+2. P &rArr; Q :: Assumption
+3. Q says &phi;1 ::  1,2 Derived speaks for
+4. &phi;1 :: 3 Says
+5. &phi;1 &sup; (&phi;2 &sup; &phi;1) :: 4 taut
+6. Q says (&phi;2 &sup; &phi;1) :: 5,3 Modus Ponens
+
+$\frac{P\text{ says }(Q \text{ controls } \phi{})\space{}P|Q\text{ says }\phi{}}{P\text{ says }\phi{}}$
+
+1. P says (Q controls &phi;) :: assumption
+2. P|Q says &phi;   :: assumption
+3. P says Q says &phi; :: 2,quoting
+4. P says ((Q says &phi;) &sup; &phi;)  :: 1, controls def
+5. P says &phi; :: 2, says
